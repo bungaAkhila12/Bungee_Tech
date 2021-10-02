@@ -1,0 +1,9 @@
+import pandas as pd
+crime = pd.read_csv(r"/content/main.csv")
+crime.head()
+crime = crime.set_index('Year',drop=True)
+crime
+
+
+del crime['Total']
+crime.head()

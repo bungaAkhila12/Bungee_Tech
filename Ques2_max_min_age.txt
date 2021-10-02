@@ -1,0 +1,36 @@
+
+import pandas as pd
+import numpy as np
+
+
+p = pd.read_csv(r"/content/main.csv")
+p.head()
+
+#print(p.max())
+df = pd.DataFrame()
+print(df.max())
+
+
+data = [{'Occupation': 'administrator', 'min' : 21, 'max':70},
+        {'Occupation': 'artist', 'min' :19 , 'max':48},
+        {'Occupation': 'doctor', 'min' : 28, 'max':64},
+        {'Occupation': 'educator', 'min' : 23, 'max':63},
+        {'Occupation': 'engineer', 'min' :22 , 'max':70},
+        {'Occupation': 'entertainment', 'min' :15 , 'max':50},
+        {'Occupation': 'executive', 'min' : 22, 'max':69},
+        {'Occupation': 'healthcare', 'min' :22 , 'max':62},
+        {'Occupation': 'homemaker', 'min' :20 , 'max':50},
+        {'Occupation': 'lawyer', 'min' :21 , 'max':53},
+        {'Occupation': 'librarian', 'min' : 23, 'max':69},
+        {'Occupation': 'marketing', 'min' :24 , 'max':55},
+        {'Occupation': 'none', 'min' :11 , 'max':55},
+        {'Occupation': 'other', 'min' :13 , 'max':64},
+        {'Occupation': 'programmer', 'min' :20 , 'max':63},
+        {'Occupation': 'retired', 'min' :51 , 'max':73},
+        {'Occupation': 'salesman', 'min' :18 , 'max':66},
+        {'Occupation': 'scientist', 'min' : 23, 'max':55},
+        {'Occupation': 'student', 'min' :7 , 'max':42},
+        {'Occupation': 'technician', 'min' :21 , 'max':55},
+        {'Occupation': 'writer', 'min' : 18, 'max':60},
+        ]
+pd.DataFrame(data)
